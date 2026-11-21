@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="مختبر التقنية والاقتصاد: مساحة عربية مبسطة لاستكشاف الذكاء الاصطناعي والاقتصاد والبيانات.">
+  <title>مختبر التقنية والاقتصاد</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0b1220;
+      --panel: #121d31;
+      --text: #eef4ff;
+      --muted: #aab8ce;
+      --accent: #67d5bd;
+      --line: rgba(255,255,255,.12);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Tahoma, Arial, sans-serif;
+      color: var(--text);
+      background: radial-gradient(circle at 15% 10%, #18324b 0, transparent 35%), var(--bg);
+      line-height: 1.8;
+    }
+    .wrap { width: min(1080px, 92%); margin: auto; }
+    header { padding: 72px 0 42px; }
+    .eyebrow { color: var(--accent); font-weight: 700; letter-spacing: .04em; }
+    h1 { margin: 12px 0; font-size: clamp(2.2rem, 6vw, 4.3rem); line-height: 1.2; }
+    .intro { max-width: 700px; color: var(--muted); font-size: 1.12rem; }
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; padding: 18px 0 70px; }
+    .card {
+      padding: 26px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: linear-gradient(145deg, rgba(255,255,255,.07), rgba(255,255,255,.025));
+      box-shadow: 0 18px 45px rgba(0,0,0,.16);
+    }
+    .icon { font-size: 2rem; }
+    h2 { margin: 12px 0 8px; font-size: 1.35rem; }
+    .card p { margin: 0; color: var(--muted); }
+    footer { border-top: 1px solid var(--line); padding: 22px 0 34px; color: var(--muted); font-size: .92rem; }
+    @media (max-width: 720px) {
+      header { padding-top: 48px; }
+      .cards { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <div class="eyebrow">معرفة • ابتكار • فرص</div>
+      <h1>مختبر التقنية والاقتصاد</h1>
+      <p class="intro">مساحة عربية مبسطة لاستكشاف الأفكار التي تشكّل المستقبل، وفهم أثر التقنية والاقتصاد والبيانات في حياتنا اليومية.</p>
+    </header>
+    <section class="cards" aria-label="مجالات المختبر">
+      <article class="card">
+        <div class="icon" aria-hidden="true">🤖</div>
+        <h2>الذكاء الاصطناعي</h2>
+        <p>نتعرّف على أدوات الذكاء الاصطناعي واستخداماتها العملية، وكيف تساعد على حل المشكلات وتطوير الأعمال.</p>
+      </article>
+      <article class="card">
+        <div class="icon" aria-hidden="true">📈</div>
+        <h2>الاقتصاد</h2>
+        <p>نبسّط المفاهيم الاقتصادية ونستكشف الأسواق والابتكار والفرص التي تصنع قيمة مستدامة.</p>
+      </article>
+      <article class="card">
+        <div class="icon" aria-hidden="true">📊</div>
+        <h2>البيانات</h2>
+        <p>نحوّل البيانات إلى فهم أوضح ورؤى تساعد على اتخاذ قرارات أفضل.</p>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">مختبر التقنية والاقتصاد — مشروع تجريبي مفتوح للتعلّم والتطوير.</div>
+  </footer>
+</body>
+</html>
